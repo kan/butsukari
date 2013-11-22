@@ -8,7 +8,7 @@ our $VERSION = "0.01";
 
 sub geiko {
     my ($class, @rikishis) = @_;
-    my $count = int(scalar(@rikishis)/2);
+    my $count   = scalar(@rikishis) - 1;
     my $banduke = Butsukari::Banduke->new(@rikishis);
 
     for my $day (1..$count) {
