@@ -4,7 +4,7 @@
       "Kan Fushihara <kan.fushihara@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.9.0, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Minilla/v0.9.0, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -53,5 +53,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kan/butsukari/issues"
+      },
+      "homepage" : "https://github.com/kan/butsukari",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/kan/butsukari.git",
+         "web" : "https://github.com/kan/butsukari"
+      }
+   },
    "version" : "0.01"
 }
