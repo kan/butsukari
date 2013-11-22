@@ -2,10 +2,24 @@ package Butsukari;
 use 5.008005;
 use strict;
 use warnings;
+use Butsukari::Banduke;
 
 our $VERSION = "0.01";
 
+sub geiko {
+    my ($class, @rikishis) = @_;
+    my $count = int(scalar(@rikishis)/2);
+    my $banduke = Butsukari::Banduke->new(@rikishis);
 
+    for my $day (1..$count) {
+        my $torikumi = $banduke->torikumi;
+           $torikumi->match;
+    }
+
+    for my $rikishi (@{$banduke->result}) {
+        print "@{[$rikishi->shikona]}: @{[$rikishi->kachiboshi]}勝 @{[$rikishi->makeboshi]}敗\n";
+    }
+}
 
 1;
 __END__
